@@ -23,6 +23,7 @@ const ArrowButton = ({ type, style, direction, moveImage }) => {
           transform: `rotate(${direction === 'prev' ? 0 : 180}deg)`,
           ...style,
         }}
+        type={direction}
         className={'arrowButton__button'}
         onClick={changeImage}
         onMouseOver={() => setcanChangeImage(false)}
