@@ -1,1 +1,4 @@
-LIVE : https://arekczap.github.io/recruitmentTask/
+TO RUN:
+clone repository
+npm install 
+npm run start
