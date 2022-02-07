@@ -1,4 +1,4 @@
-TO RUN:
-clone repository
-npm install 
-npm run start
+###  TO RUN:
+### clone repository
+### npm install 
+### npm run start
