@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './ArrowButton.scss'
 
-const ArrowButton = ({ type, style, direction, moveSlide: moveImage }) => {
+const ArrowButton = ({ type, style, direction, moveImage }) => {
   const [canChangeImage, setcanChangeImage] = useState(false)
 
   const changeImage = (evt) => {
