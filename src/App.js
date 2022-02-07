@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import SectionAbout from './sections/SectionAbout/SectionAbout'
+import SectionMeetSpace from './sections/SectionMeetSpace/SectionMeetSpace'
+import SectionOffer from './sections/SectionOffer/SectionOffer'
+import SectionOwnOffice from './sections/SectionOwnOffice/SectionOwnOffice'
+import SectionNews from './sections/SectionNews/SectionNews'
+import SectionGallery from './sections/SectionGallery/SectionGallery'
+import SectionFooter from './sections/SectionFooter/SectionFooter'
 
-export default App;
+const App = () => (
+
+  <>
+    <SectionAbout />
+    <SectionMeetSpace />
+    <SectionOffer />
+    <SectionOwnOffice />
+    <SectionNews />
+    <SectionGallery />
+    <SectionFooter />
+  </>
+
+)
+
+export default App

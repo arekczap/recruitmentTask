@@ -1,0 +1,150 @@
+@import "../../styles/variables.scss";
+
+.sectionOffer {
+  position: relative;
+  max-width: 155.7rem;
+  width: 100vw;
+  margin: 0 auto;
+  padding-top: 11.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 99vh;
+
+  &__textItemContainer {
+    max-width: 29rem;
+    max-height: 36rem;
+
+    &__text {
+      position: relative;
+      font-size: 4.8rem;
+      font-weight: bold;
+      line-height: 5.8rem;
+
+      &:after {
+        position: absolute;
+        display: block;
+        content: " ";
+        width: 13rem;
+        margin-top: 4.4rem;
+        height: 1rem;
+        background-color: black;
+      }
+    }
+  }
+
+  &__itemContainer {
+    max-width: 29rem;
+    max-height: 36rem;
+    width: 100%;
+
+    &__image {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+    }
+
+    &__text {
+      display: inline-block;
+      white-space: pre-line;
+      font-size: 2.8rem;
+      font-weight: 400;
+      margin-top: 3.9rem;
+      line-height: 3.9rem;
+    }
+  }
+
+  &__itemContainer:nth-of-type() &__text {
+    font-size: 50px;
+  }
+
+  &__itemContainer:nth-of-type(2) {
+    margin-top: 9.7rem;
+    margin-left: 3.3rem;
+  }
+  &__itemContainer:nth-of-type(3) {
+    margin-top: 10.5rem;
+    margin-left: 6.6rem;
+  }
+  &__itemContainer:nth-of-type(4) {
+    margin-top: 9.5rem;
+    margin-left: 10rem;
+  }
+  &__itemContainer:nth-of-type(5) {
+    margin-top: 4.5rem;
+    margin-left: 0;
+    margin-bottom: -2px;
+  }
+  &__itemContainer:nth-of-type(6) {
+    margin-top: 5.5rem;
+    margin-left: 3.2rem;
+  }
+  &__itemContainer:nth-of-type(7) {
+    margin-top: 3.7rem;
+    margin-left: 6.5rem;
+  }
+
+  &__itemContainer:nth-of-type(8) {
+    margin-top: 5.5rem;
+    margin-left: 10rem;
+  }
+
+  &__buttonContainer {
+    position: relative;
+    width: 37.75rem;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    height: 7.8rem;
+    overflow: hidden;
+
+    &__button {
+      display: flex;
+      align-items: center;
+      padding-left: 3rem;
+      transition: 0.3s ease-out;
+      height: 100%;
+    }
+
+    &__text {
+      display: inline-block;
+      letter-spacing: 3.5px;
+      color: white;
+      font-size: 1.8rem;
+      font-weight: bold;
+      pointer-events: none;
+      transition: 0.3s ease-out;
+      z-index: 2;
+    }
+
+    &:before {
+      display: block;
+      position: absolute;
+      content: "";
+      left: -80%;
+      height: 100%;
+      width: 80%;
+      background-color: #ffcc48;
+      transition: 0.3s ease-out;
+    }
+
+    &:hover:before {
+      left: 0;
+    }
+
+    &:hover &__text {
+      color: black;
+    }
+
+    &__icon {
+      position: absolute;
+      filter: invert(100%) sepia(0%) saturate(176%) hue-rotate(200deg) brightness(117%) contrast(100%);
+      height: 50%;
+      width: 10%;
+      right: 1.5rem;
+      background: url("../../assets/arrowRight.svg") no-repeat center / cover;
+    }
+  }
+}

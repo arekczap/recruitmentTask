@@ -1,0 +1,37 @@
+@import "../../styles/variables.scss";
+
+.sectionOwnOffice {
+  position: relative;
+  max-width: 191.5rem;
+  width: 100vw;
+  height: 99vh;
+  background: url("../../assets/ownOffice.png") no-repeat;
+  background-position: 100% 75%;
+
+  &__image {
+    position: absolute;
+    right: 18.1rem;
+    top: 14rem;
+  }
+
+  &__header {
+    position: absolute;
+    font-size: 6.5rem;
+    font-weight: bold;
+    white-space: pre-line;
+    top: 42.7rem;
+    left: 17.2rem;
+    line-height: 7.5rem;
+    max-width: 55rem;
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: black;
+      top: 32rem;
+      width: 60.5rem;
+      height: 2rem;
+    }
+  }
+}

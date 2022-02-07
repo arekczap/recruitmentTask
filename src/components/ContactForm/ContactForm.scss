@@ -1,0 +1,102 @@
+.form {
+  position: absolute;
+  right: 17.4rem;
+  top: 17.6rem;
+  width: 44.5rem;
+  height: 63.2rem;
+  background-color: white;
+  z-index: 1;
+
+  &__container {
+    margin: 3.3rem;
+    margin-top: 2.7rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__heading1,
+  &__heading2 {
+    font-weight: bold;
+    font-size: 2.8rem;
+  }
+
+  &__heading2 {
+    margin-top: -0.3rem;
+  }
+
+  &__p1 {
+    margin-top: 0.2rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+
+  &__p2 {
+    margin-top: -0.9rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+
+  &__input,
+  &__input1 {
+    position: relative;
+    margin-top: 1.8rem;
+    font-size: 1.8rem;
+    padding-left: 2rem;
+    height: 4.6rem;
+    border: 1px solid black;
+  }
+
+  &__input1 {
+    margin-top: 2.1rem;
+  }
+  &__input::placeholder,
+  &__input1::placeholder {
+    position: absolute;
+    font-size: 1.8rem;
+    top: 1.2rem;
+    left: 1.9rem;
+    // padding-left: 1.6rem;
+    // margin-top: 5rem;
+  }
+
+  &__checkboxContainer {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 2.1rem;
+  }
+
+  input[type="checkbox"] {
+    margin: 0;
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+
+  &__checkboxLabel {
+    margin-left: 1.7rem;
+  }
+
+  &__submitButton {
+    position: relative;
+    margin-top: 2.3rem;
+    letter-spacing: 3px;
+    height: 5.1rem;
+    background-color: black;
+    // box-shadow: inset 0 0 0 0 black;
+    color: white;
+    font-size: 1.9rem;
+    font-weight: bold;
+    border-style: none;
+    transition: 0.3s ease-out;
+  }
+  &__submitButton:active {
+    outline: none;
+    border: none;
+  }
+
+  &__submitButton:hover {
+    box-shadow: inset 37.9rem 0 0 0 yellow;
+
+    color: black;
+  }
+}

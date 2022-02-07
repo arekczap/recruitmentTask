@@ -1,0 +1,60 @@
+@import "../../styles/variables.scss";
+
+.sliderStatus {
+  &__container {
+    position: absolute;
+    width: 28.8rem;
+    height: 1.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 4.7rem;
+    left: 33.2rem;
+  }
+
+  &__prevIndex,
+  &__nextIndex {
+    display: inline-block;
+    width: 3.5rem;
+    font-size: 1.8rem;
+    font-family: $Poppins;
+    font-weight: bold;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  &__nextIndex {
+    text-align: right;
+    transition: 0.5s linear;
+  }
+}
+
+.animationNextIndex {
+  animation: animationNext 0.2s;
+}
+.animationPrevIndex {
+  animation: animationPrev 0.2s;
+}
+
+@keyframes animationNext {
+  from {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+}
+
+@keyframes animationPrev {
+  from {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+}
+
+@keyframes progress-animation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}

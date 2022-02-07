@@ -1,0 +1,86 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "indent": [
+      2,
+      2
+    ],
+    "react/prop-types": 0,
+    "react/display-name": 0,
+    "no-unused-vars": 1,
+    "jsx-quotes": [
+      1,
+      "prefer-single"
+    ],
+    "quotes": [
+      1,
+      "single"
+    ],
+    "max-len": [
+      1,
+      {
+        "code": 120,
+        "tabWidth": 2,
+        "ignoreStrings": true,
+        "ignoreComments": true,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true
+      }
+    ],
+    "eqeqeq": 1,
+    "no-multi-spaces": 2,
+    "comma-dangle": [
+      2,
+      "always-multiline"
+    ],
+    "comma-spacing": [
+      2,
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "function-paren-newline": [
+      2,
+      {
+        "minItems": 5
+      }
+    ],
+    "arrow-body-style": [
+      2,
+      "as-needed"
+    ],
+    "arrow-spacing": 2,
+    "react/sort-prop-types": [
+      2,
+      {
+        "requiredFirst": true,
+        "callbacksLast": true
+      }
+    ],
+    "react/jsx-curly-brace-presence": [
+      2,
+      {
+        "props": "always",
+        "children": "never"
+      }
+    ]
+  }
+}

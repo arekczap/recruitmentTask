@@ -1,0 +1,13 @@
+@import "../../styles/variables.scss";
+@import "../../components/Space/Space.scss";
+
+.sectionSpace {
+  position: relative;
+  max-width: 155.7rem;
+  margin: 0 auto;
+  padding-top: 14.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 97.6vh;
+}

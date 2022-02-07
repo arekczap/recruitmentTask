@@ -1,0 +1,76 @@
+@import "../../styles/variables.scss";
+
+.sectionGallery {
+  position: relative;
+  max-width: 191.5rem;
+  width: 100vw;
+  margin-top: 2.5rem;
+  height: 97vh;
+  column-count: 3;
+  align-items: center;
+
+  &__sectionTitle {
+    position: absolute;
+    font-size: 6.5rem;
+    font-weight: bold;
+    right: 18.6rem;
+    top: 0rem;
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: black;
+      height: 2rem;
+      right: 0;
+      margin-top: 3.3rem;
+      width: 44.5rem;
+    }
+  }
+
+  &__picture {
+    cursor: pointer;
+  }
+
+  &__picture0 {
+    width: 98.1%;
+  }
+
+  &__picture1,
+  &__picture2 {
+    display: block;
+    max-width: 121%;
+    margin-left: 0.7rem;
+  }
+
+  &__picture2 {
+    margin-top: 2rem;
+  }
+
+  &__picture3 {
+    position: absolute;
+    right: -32rem;
+    bottom: 2.2rem;
+    width: 41.4%;
+  }
+
+  &__arrowLeftContainer,
+  &__arrowRightContainer {
+    top: 37.5rem;
+    width: 12.8rem;
+    height: 12.8rem;
+    position: absolute;
+
+    .arrowButton__image {
+      margin-left: 1rem;
+    }
+  }
+
+  &__arrowLeftContainer {
+    left: 1.6rem;
+  }
+
+  &__arrowRightContainer {
+    right: 2.7rem;
+  }
+}

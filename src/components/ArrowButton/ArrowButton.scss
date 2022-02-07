@@ -1,0 +1,53 @@
+.arrowButton {
+  &__container {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+
+  &__button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    outline: none;
+
+    &:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 100%;
+      background-color: black;
+      transition: width 0.2s;
+    }
+
+    &:hover:after {
+      width: 100%;
+      cursor: pointer;
+      transition-delay: 0.2s;
+    }
+  }
+
+  &__image {
+    backface-visibility: hidden;
+    cursor: default;
+    width: 60px;
+    height: 60px;
+    background: url(../../assets/arrowLeft.svg) no-repeat center / cover;
+    transition: filter ease-out 0.05s;
+    pointer-events: none;
+    z-index: 2;
+  }
+  
+  &__button:hover &__image {
+    filter: invert(100%) sepia(0%) saturate(176%) hue-rotate(200deg) brightness(117%) contrast(100%);
+    transition-delay: 0.2s;
+  }
+}

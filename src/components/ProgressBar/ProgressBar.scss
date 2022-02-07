@@ -1,0 +1,12 @@
+.progressBar {
+  &__bar {
+    width: 20.6rem;
+    height: 0.7rem;
+    background-color: black;
+  }
+
+  &__actualPoogress {
+    background-color: white;
+    height: 0.7rem;
+  }
+}
