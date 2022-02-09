@@ -5,9 +5,7 @@ import newsImage1 from '../../assets/newsImage1.png'
 import newsImage2 from '../../assets/newsImage2.png'
 import newsImage3 from '../../assets/newsImage3.png'
 
-
 const sectionNewsData = [
-
   {
     imageSrc: newsImage1,
     dataText: '01.01.2021',
@@ -26,7 +24,7 @@ const sectionNewsData = [
 ]
 
 const SectionNews = () => (
-  <div className={'sectionNews'}>
+  <div id={'news'} className={'sectionNews'}>
     <span className={'sectionNews__headingText'}>Aktualności</span>
     <div className={'sectionNews__contentContainer'}>
       {

@@ -1,5 +1,4 @@
 import React from 'react'
-
 import SectionAbout from './sections/SectionAbout/SectionAbout'
 import SectionMeetSpace from './sections/SectionMeetSpace/SectionMeetSpace'
 import SectionOffer from './sections/SectionOffer/SectionOffer'
@@ -9,7 +8,6 @@ import SectionGallery from './sections/SectionGallery/SectionGallery'
 import SectionFooter from './sections/SectionFooter/SectionFooter'
 
 const App = () => (
-
   <>
     <SectionAbout />
     <SectionMeetSpace />

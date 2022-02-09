@@ -1,4 +1,4 @@
-@import "../../styles/variables.scss";
+@import "../../styles/index.scss";
 
 .sliderStatus {
   &__container {
@@ -10,6 +10,10 @@
     align-items: center;
     bottom: 4.7rem;
     left: 33.2rem;
+
+    @include breakpoint(350px) {
+      width: 24rem;
+    }
   }
 
   &__prevIndex,

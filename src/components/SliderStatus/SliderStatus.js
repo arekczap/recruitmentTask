@@ -15,7 +15,6 @@ const SliderStatus = ({ slideDuration, currentIndex, countImages }) => {
     }
   }, [prevCount, currentIndex])
 
-
   return (
     <div className={'sliderStatus__container'}>
       <span

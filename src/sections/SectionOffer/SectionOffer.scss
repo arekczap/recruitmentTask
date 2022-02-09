@@ -1,15 +1,40 @@
-@import "../../styles/variables.scss";
+@import "../../styles/index.scss";
 
 .sectionOffer {
-  position: relative;
   max-width: 155.7rem;
   width: 100vw;
   margin: 0 auto;
-  padding-top: 11.2rem;
+  padding-top: 14.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  height: 99vh;
+  min-height: 99vh;
+
+  @include breakpoint(1850px) {
+    max-width: 87%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @include breakpoint(1400px) {
+    max-width: 94%;
+  }
+  @include breakpoint(900px) {
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  @include breakpoint(750px) {
+    justify-content: space-around;
+    max-width: 97%;
+  }
+  @include breakpoint(500px) {
+    justify-content: space-between;
+    max-width: 70%;
+  }
+  @include breakpoint(350px) {
+    max-width: 74%;
+  }
 
   &__textItemContainer {
     max-width: 29rem;
@@ -34,16 +59,28 @@
   }
 
   &__itemContainer {
-    max-width: 29rem;
-    max-height: 36rem;
-    width: 100%;
+    min-width: 29rem;
+    height: 31rem;
+    width: 76%;
+
+    @include breakpoint(1850px) {
+      height: 100%;
+    }
+
+    @include breakpoint(500px) {
+      min-width: 18rem;
+    }
 
     &__image {
       display: block;
       max-width: 100%;
-      max-height: 100%;
       width: auto;
-      height: auto;
+
+      @include breakpoint(1850px) {
+        margin: 0 auto;
+        height: 35%;
+        margin-top: 5rem;
+      }
     }
 
     &__text {
@@ -51,8 +88,14 @@
       white-space: pre-line;
       font-size: 2.8rem;
       font-weight: 400;
-      margin-top: 3.9rem;
+      margin-top: 3.8rem;
       line-height: 3.9rem;
+
+      @include breakpoint(1850px) {
+        text-align: center;
+        width: 100%;
+        margin: 3.9rem auto 0 auto;
+      }
     }
   }
 
@@ -91,6 +134,28 @@
     margin-left: 10rem;
   }
 
+  &__itemContainer:nth-of-type(2),
+  &__itemContainer:nth-of-type(3),
+  &__itemContainer:nth-of-type(4),
+  &__itemContainer:nth-of-type(5),
+  &__itemContainer:nth-of-type(6),
+  &__itemContainer:nth-of-type(7),
+  &__itemContainer:nth-of-type(8) {
+    @include breakpoint(1850px) {
+      width: 31rem;
+      margin: 0 0;
+      height: 31rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @include breakpoint(500px) {
+      width: 19rem;
+    }
+  }
+
   &__buttonContainer {
     position: relative;
     width: 37.75rem;
@@ -100,12 +165,15 @@
     height: 7.8rem;
     overflow: hidden;
 
-    &__button {
-      display: flex;
-      align-items: center;
-      padding-left: 3rem;
-      transition: 0.3s ease-out;
-      height: 100%;
+    @include breakpoint(1100px) {
+      margin-top: 5rem;
+    }
+
+    @include breakpoint(500px) {
+      width: 42rem;
+    }
+    @include breakpoint(350px) {
+      width: 44rem;
     }
 
     &__text {
@@ -117,15 +185,18 @@
       pointer-events: none;
       transition: 0.3s ease-out;
       z-index: 2;
+      width: 100%;
+      line-height: 7.8rem;
+      padding-left: 3rem;
     }
 
     &:before {
       display: block;
       position: absolute;
       content: "";
-      left: -80%;
+      left: -82%;
       height: 100%;
-      width: 80%;
+      width: 82%;
       background-color: #ffcc48;
       transition: 0.3s ease-out;
     }

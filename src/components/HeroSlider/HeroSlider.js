@@ -26,8 +26,6 @@ const HeroSlider = ({ heroImages }) => {
     return () => clearTimeout(slideTimeout)
   }, [currentIndex])
 
-
-
   return (
     <div
       style={{ backgroundImage: `url(${heroImages[currentIndex].src})` }}
@@ -57,6 +55,5 @@ const HeroSlider = ({ heroImages }) => {
 
     </div>
   )
-
 }
 export default HeroSlider

@@ -1,9 +1,56 @@
 @import "./variables.scss";
+@import "./breakpoints.scss";
 
 html {
   font-size: 62.5%;
-  height: 100vw;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include breakpoint(1920px) {
+    font-size: 62.5%;
+  }
+
+  @include breakpoint(1400px) {
+    font-size: 60%;
+  }
+
+  @include breakpoint(900px) {
+    font-size: 53%;
+  }
+
+  @include breakpoint(750px) {
+    font-size: 47%;
+  }
+
+  @include breakpoint(500px) {
+    font-size: 40%;
+  }
+
+  @include breakpoint(425px) {
+    font-size: 32%;
+  }
+
+  @include breakpoint(350px) {
+    font-size: 29%;
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: gray;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: lightgray;
+    border-radius: 10px;
+  }
 }
 
 body {
@@ -17,4 +64,7 @@ body {
 
 * {
   font-family: $Poppins;
+}
+
+#root {
 }

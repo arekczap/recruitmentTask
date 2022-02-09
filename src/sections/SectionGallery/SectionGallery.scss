@@ -1,13 +1,14 @@
-@import "../../styles/variables.scss";
+@import "../../styles/index.scss";
 
 .sectionGallery {
   position: relative;
   max-width: 191.5rem;
   width: 100vw;
-  margin-top: 2.5rem;
-  height: 97vh;
-  column-count: 3;
-  align-items: center;
+  height: 88rem;
+  max-height: 88rem;
+  margin: 0 auto;
+  margin-top: 14.2rem;
+  overflow: hidden;
 
   &__sectionTitle {
     position: absolute;
@@ -15,6 +16,12 @@
     font-weight: bold;
     right: 18.6rem;
     top: 0rem;
+    z-index: 2;
+
+    @include breakpoint(1550px) {
+      right: 3.6rem;
+      top: 15rem;
+    }
 
     &:after {
       content: "";
@@ -28,30 +35,45 @@
     }
   }
 
+  &__pictureContainer {
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__pictureContainer0 {
+    top: 0;
+    left: 0;
+    width: 32.4%;
+    height: 100%;
+  }
+  &__pictureContainer1 {
+    top: 0;
+    left: 34%;
+    width: 39.8%;
+    max-height: 61.6%;
+  }
+  &__pictureContainer2 {
+    bottom: 0;
+    left: 34%;
+    width: 39.8%;
+    height: 36%;
+  }
+  &__pictureContainer3 {
+    bottom: 0;
+    left: 75.3%;
+    width: 41%;
+    height: 65%;
+  }
+
   &__picture {
     cursor: pointer;
-  }
+    transition: transform 0.3s linear;
 
-  &__picture0 {
-    width: 98.1%;
-  }
-
-  &__picture1,
-  &__picture2 {
-    display: block;
-    max-width: 121%;
-    margin-left: 0.7rem;
-  }
-
-  &__picture2 {
-    margin-top: 2rem;
-  }
-
-  &__picture3 {
-    position: absolute;
-    right: -32rem;
-    bottom: 2.2rem;
-    width: 41.4%;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &__arrowLeftContainer,
@@ -60,6 +82,7 @@
     width: 12.8rem;
     height: 12.8rem;
     position: absolute;
+    z-index: 1;
 
     .arrowButton__image {
       margin-left: 1rem;

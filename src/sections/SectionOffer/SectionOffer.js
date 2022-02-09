@@ -41,7 +41,7 @@ const sectionOfferData = [
 ]
 
 const SectionOffer = () => (
-  <div className={'sectionOffer'}>
+  <div id={'offer'} className={'sectionOffer'}>
     <div className={'sectionOffer__textItemContainer'}>
       <span className={'sectionOffer__textItemContainer__text'}>Lorem ipsum dolor sit amet, conse</span>
     </div>
@@ -55,7 +55,6 @@ const SectionOffer = () => (
       ))
     }
     <div className={'sectionOffer__buttonContainer'}>
-      <div className={'sectionOffer__buttonContainer__button'} />
       <span className={'sectionOffer__buttonContainer__text'}>DOWIEDZ SIĘ WIĘCEJ</span>
       <div className={'sectionOffer__buttonContainer__icon'} />
     </div>

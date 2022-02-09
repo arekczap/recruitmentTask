@@ -1,3 +1,5 @@
+@import "../../styles/index.scss";
+
 .arrowButton {
   &__container {
     width: 100%;
@@ -28,26 +30,30 @@
       transition: width 0.2s;
     }
 
-    &:hover:after {
-      width: 100%;
-      cursor: pointer;
-      transition-delay: 0.2s;
+    @include hover-supported {
+      &:hover:after {
+        width: 100%;
+        cursor: pointer;
+        transition-delay: 0.2s;
+      }
     }
   }
 
   &__image {
     backface-visibility: hidden;
     cursor: default;
-    width: 60px;
-    height: 60px;
+    width: 40%;
+    height: 40%;
     background: url(../../assets/arrowLeft.svg) no-repeat center / cover;
     transition: filter ease-out 0.05s;
     pointer-events: none;
     z-index: 2;
   }
-  
-  &__button:hover &__image {
-    filter: invert(100%) sepia(0%) saturate(176%) hue-rotate(200deg) brightness(117%) contrast(100%);
-    transition-delay: 0.2s;
+
+  @include hover-supported {
+    &__button:hover &__image {
+      filter: invert(100%) sepia(0%) saturate(176%) hue-rotate(200deg) brightness(117%) contrast(100%);
+      transition-delay: 0.2s;
+    }
   }
 }

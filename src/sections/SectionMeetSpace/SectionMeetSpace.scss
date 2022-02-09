@@ -2,12 +2,32 @@
 @import "../../components/Space/Space.scss";
 
 .sectionSpace {
-  position: relative;
   max-width: 155.7rem;
   margin: 0 auto;
   padding-top: 14.2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 97.6vh;
+
+  @include breakpoint(1550px) {
+    max-width: 135.7rem;
+  }
+
+  @include breakpoint(1400px) {
+    max-width: 112.7rem;
+  }
+  @include breakpoint(1100px) {
+    max-width: 95.7rem;
+  }
+
+  @include breakpoint(900px) {
+    max-width: 70.7rem;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+  }
+
+  @include breakpoint(750px) {
+    max-width: 80.7rem;
+  }
 }

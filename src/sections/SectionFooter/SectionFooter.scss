@@ -1,12 +1,18 @@
+@import "../../styles/index.scss";
+
 .sectionFooter {
   position: relative;
-  max-width: 191.5rem;
   width: 100vw;
-  margin-top: 14.7rem;
-  height: 59.2vh;
+  margin-top: 16.4rem;
   display: flex;
   background-color: black;
   color: white;
+
+  @include breakpoint(750px) {
+    margin: 17rem auto 0 auto;
+    justify-content: space-around;
+    padding-top: 5rem;
+  }
 
   &__companyContainer {
     width: 18rem;
@@ -14,6 +20,10 @@
     padding-top: 8rem;
     display: flex;
     flex-direction: column;
+
+    @include breakpoint(1100px) {
+      margin-left: 9.7%;
+    }
 
     &__adress1,
     &__adress2 {
@@ -36,7 +46,12 @@
 
     &__privacy {
       margin-top: 14rem;
+      margin-bottom: 5rem;
       font-size: 1.17rem;
+
+      @include breakpoint(750px) {
+        margin-bottom: 1rem;
+      }
     }
   }
 
@@ -44,7 +59,16 @@
     display: flex;
     font-size: 1.6rem;
     padding-top: 19.3rem;
-    margin-left: 45.5rem;
+    margin-left: 23.7%;
+
+    @include breakpoint(1100px) {
+      margin-left: 15.7%;
+    }
+
+    @include breakpoint(750px) {
+      padding-top: 0;
+      margin-left: 7%;
+    }
 
     &__col1,
     &__col2 {
@@ -53,6 +77,10 @@
     }
     &__col2 {
       margin-left: 18rem;
+
+      @include breakpoint(1100px) {
+        margin-left: 15.7%;
+      }
     }
 
     &__text {
@@ -62,7 +90,18 @@
 
   &__image {
     position: absolute;
-    top: -3rem;
-    right: 18.4rem;
+    top: -5.5%;
+    left: 75.1%;
+
+    @include breakpoint(1400px) {
+      left: 60.1%;
+    }
+    @include breakpoint(900px) {
+      left: 55%;
+      top: -5.5%;
+    }
+    @include breakpoint(750px) {
+      display: none;
+    }
   }
 }

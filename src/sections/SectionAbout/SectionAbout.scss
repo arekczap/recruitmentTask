@@ -1,22 +1,75 @@
-@import "../../styles//variables.scss";
+@import "../../styles/index.scss";
 
-.sectionAbout {
-  position: absolute;
-  top: 50.6rem;
-  left: 17.3rem;
-  margin: 0;
-  font-size: $Poppins;
-  color: white;
+.sectionAboutWrapper {
+  top: 0;
+  margin: 0 auto;
+  max-width: 81.7%;
+  height: 100vh;
 
-  &__text1 {
-    font-size: 6.5rem;
-    font-weight: bold;
+  @include breakpoint(1200px) {
+    max-width: 100%;
   }
-  &__text2 {
-    max-width: 89.1rem;
-    font-size: 4.8rem;
-    margin: 0;
-    margin-top: 0.8rem;
-    font-weight: 300;
+
+  .sectionAbout {
+    height: 70.5%;
+    color: white;
+    display: flex;
+    margin: 0 auto;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    @include breakpoint(1200px) {
+      max-width: 95%;
+    }
+
+    @include breakpoint(750px) {
+      height: 60%;
+    }
+    @include breakpoint(500px) {
+      height: 55%;
+    }
+
+    &__content {
+      height: 100%;
+      z-index: 1;
+      width: 49vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      padding-bottom: 5.2rem;
+
+      @include breakpoint(1400px) {
+        width: 42vw;
+      }
+
+      @include breakpoint(900px) {
+        width: 37vw;
+      }
+
+      @include breakpoint(750px) {
+        width: 75vw;
+      }
+      @include breakpoint(500px) {
+        width: 80vw;
+      }
+
+      &__text1 {
+        font-size: 6.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+
+        @include breakpoint(750px) {
+          font-size: 12rem;
+        }
+      }
+      &__text2 {
+        font-size: 4.8rem;
+        font-weight: 300;
+
+        @include breakpoint(750px) {
+          font-size: 5.2rem;
+        }
+      }
+    }
   }
 }

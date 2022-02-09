@@ -33,12 +33,10 @@ const sectionSpacedata = [
     costText: 'od 100 zł/h',
     type: 'small',
   },
-
-
 ]
 
 const SectionMeetSpace = () => (
-  <div className={'sectionSpace'}>
+  <div id={'meetSpace'} className={'sectionSpace'}>
     {
       sectionSpacedata.map(({ type, imageSrc, headingText, costText }, index) => (
         <Space
