@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/recruitmentTask/static/css/main.a95d2dfd.css",
+    "main.js": "/recruitmentTask/static/js/main.ef9e17c0.js",
+    "static/media/ownOffice.png": "/recruitmentTask/static/media/ownOffice.752e84ad36e7579e3f8b.png",
+    "static/media/galeryPicture1.png": "/recruitmentTask/static/media/galeryPicture1.1d8fabc21e6ced476f31.png",
+    "static/media/galeryPicture2.png": "/recruitmentTask/static/media/galeryPicture2.16f4ccef9dcc70d14395.png",
+    "static/media/hero1.png": "/recruitmentTask/static/media/hero1.ebc3ef3775710f5df83d.png",
+    "static/media/galeryPicture4.png": "/recruitmentTask/static/media/galeryPicture4.7549a3be4104328038df.png",
+    "static/media/spacePhotoSmall1.png": "/recruitmentTask/static/media/spacePhotoSmall1.e3cf08a3853b426363cd.png",
+    "static/media/spacePhotoLarge2.png": "/recruitmentTask/static/media/spacePhotoLarge2.397d209d62658fa7f8df.png",
+    "static/media/spacePhotoLarge1.png": "/recruitmentTask/static/media/spacePhotoLarge1.4ef2f7d4c849d1abf630.png",
+    "static/media/hero3.png": "/recruitmentTask/static/media/hero3.f7a4f889401fe9c225bc.png",
+    "static/media/hero2.png": "/recruitmentTask/static/media/hero2.b788091270e5c361730c.png",
+    "static/media/spacePhotoSmall2.png": "/recruitmentTask/static/media/spacePhotoSmall2.e96b4b2b2180a2f797bf.png",
+    "static/media/newsImage1.png": "/recruitmentTask/static/media/newsImage1.c1562ea8bffbcfba2b0d.png",
+    "static/media/galeryPicture3.png": "/recruitmentTask/static/media/galeryPicture3.67229011a2a5550537db.png",
+    "static/media/newsImage2.png": "/recruitmentTask/static/media/newsImage2.97d670c21347219e21bc.png",
+    "static/media/newsImage3.png": "/recruitmentTask/static/media/newsImage3.dd54a7247e2d08ddebb4.png",
+    "index.html": "/recruitmentTask/index.html",
+    "static/media/arrowRight.svg": "/recruitmentTask/static/media/arrowRight.bb749891e52634ecf958.svg",
+    "static/media/arrowLeft.svg": "/recruitmentTask/static/media/arrowLeft.ea9c3c5d87904218b0b3.svg",
+    "main.a95d2dfd.css.map": "/recruitmentTask/static/css/main.a95d2dfd.css.map",
+    "main.ef9e17c0.js.map": "/recruitmentTask/static/js/main.ef9e17c0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a95d2dfd.css",
+    "static/js/main.ef9e17c0.js"
+  ]
+}
